@@ -46,11 +46,11 @@ def get_num_wins(change: bool, tries: bool, num_doors: int) -> int:
 
 if __name__ == "__main__":
 
-    num_doors = int(input("Quantidade de portas\n-> "))
-    repeticoes = int(input("Quantidade de jogos\n-> "))
+    num_doors = int(input("Number of doors\n-> "))
+    repeticoes = int(input("Number of games\n-> "))
 
     result_change = get_num_wins(True, repeticoes, num_doors)
     result_not_change = get_num_wins(False, repeticoes, num_doors)
 
-    print(f"Acertos ao trocar a porta: {(result_change / repeticoes)*100}%")
-    print(f"Acertos ao manter a porta: {(result_not_change / repeticoes)*100}%")
+    print(f"Wins by changing the door: {(result_change / repeticoes)*100}%")
+    print(f"Wins by not changing the door: {(result_not_change / repeticoes)*100}%")
